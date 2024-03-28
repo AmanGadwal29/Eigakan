@@ -1,0 +1,42 @@
+.appName{
+    margin:5px 10px ;
+    color: red;
+    font-family: "Potta One", system-ui;
+    font-weight: 300;
+}
+.navSection{
+    display: flex;
+    /* background: transparent; */
+    justify-content: space-between;
+    height: 80px;
+
+  align-items: center;
+
+}
+.btnSection{
+    display: flex;
+    
+}
+.SignInBtn{
+    margin: 5px 10px;
+    width: 100px;
+  background-color: red;
+    border: 1px solid red;
+    border-radius: 3px;
+    height: 40px;
+    color: aliceblue;
+    font-family: "Noto Sans Display", sans-serif;
+    font-weight: 600;
+}
+.languageBtn{
+    background: transparent !important ;
+    font-family: "Noto Sans Display", sans-serif !important;
+    margin: 5px 0px; height: 40px;
+    border: 1px solid red;
+}
+@media screen and (max-width: 375px)  {
+.SignInBtn{
+
+    width: 90px;
+}
+}

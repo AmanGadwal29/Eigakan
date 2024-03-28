@@ -1,0 +1,132 @@
+
+.cardBody{
+    display: flex;
+    position: relative;
+    background-color: rgb(37, 36, 36);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.437);
+}
+.cardBody span{
+    z-index: 1;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.795);
+   
+}
+.imageBox{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.imageBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+border-bottom-left-radius: 8px;
+}
+.buttons{
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0;
+   margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+  
+
+.playBtn{
+    background-color: rgb(212, 8, 8);
+    color: white;width: 100px;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600; 
+    border-radius:4px ; 
+}
+.myListBtn{
+    background-color: rgba(144, 144, 144, 0.636);
+    color: white;width: 100px;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600; 
+    border-radius:4px ; 
+}
+.details{
+   
+    width: 600px;
+    /* margin: 20px; */
+    padding: 20px;
+    color: rgb(212, 207, 207);
+}
+.title{
+    color: white;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    color: goldenrod;
+    gap: 5px;
+}
+.vote{
+    font-size: 16px;
+}
+@media screen and (max-width: 1100px) and (min-width: 550px) {
+    .imageBox {
+        width: 250px;
+        height: 300px;
+    }
+    .buttons{
+       
+        flex-direction: column;
+    
+    }
+    
+    
+}
+@media screen and (max-width: 550px) {
+    .cardBody{
+        flex-direction: column;
+        align-items: center;
+    }
+    .imageBox  {
+        margin: 0;
+       position: static;
+       height: 280px;
+       justify-content: center;
+       align-items: center;
+       display: flex;
+       flex-direction: column;
+    }
+    .imageBox img {
+        border-radius: 0;
+        margin: 0px 0;
+        width: 130px;
+        height: 180px;
+    }
+    .buttons{
+    left: 0%;
+    transform: translateX(-0%);
+    position: static;
+    bottom: -10;
+   margin: 10px;
+    display: flex;
+    gap: 10px;
+}
+    .details{
+        padding: 0 10px;
+        width: 100%;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .overview{
+        font-size: 14px;
+    }
+   
+    
+    
+    
+}

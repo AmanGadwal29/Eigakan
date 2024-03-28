@@ -1,0 +1,105 @@
+.list {
+    margin: 30px 20px 0px 20px;
+   
+}
+.listTitle{
+  color: aliceblue;
+  margin: 20px 0;
+  font-size: 25px;
+}
+.scrollRightBtn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    color: rgba(255, 255, 255, 0.389);
+    background-color: rgba(128, 128, 128, 0.804);
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+  .scrollLeftBtn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    color: rgba(255, 255, 255, 0.389);
+    background-color: rgba(128, 128, 128, 0.804);
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+.rowPosters {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+  }
+  
+  .col{
+    position: relative;
+  }
+  .rowPoster {
+    min-width: 200px;
+    width: 200px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+.rowPoster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+.movieTitle{
+    color: white;
+    text-align: center;
+    position: absolute;
+   padding: 5px 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-family: "Noto Sans Display", sans-serif;
+    font-weight: 600;
+    text-shadow: 1px 1px 5px black;
+}
+@media screen and (max-width: 950px) and(min-width:550px){
+  .rowPoster {
+    min-width: 150px;
+    width: 150px;
+    height: 200px;
+ 
+  }
+
+}
+@media screen and (max-width: 550px){
+  .rowPoster {
+    min-width: 90px;
+    width: 90px;
+    height: 120px;
+ 
+  }
+  .rowPosters{
+    gap:10px
+  }
+  .scrollRightBtn,.scrollLeftBtn {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    
+  }
+}

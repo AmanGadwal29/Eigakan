@@ -1,0 +1,59 @@
+.nav-item a{
+  color:white !important;
+
+}
+footer .footerText{
+    color: white !important;
+   
+}
+.dashboard{
+  position: relative;
+}
+.Card{
+  position: absolute;
+  top: 0;
+}
+
+  .removeOverflowY {
+    overflow-y: unset !important;
+    max-width: 900px !important ;
+    border-radius: 8px !important;
+  }
+.searchBar{
+  margin: 0 20px;
+  width: 500px !important;
+  
+}
+.searchBar input{
+  background-color: rgba(0, 0, 0, 0.434);
+  border: 1px solid rgb(186, 186, 186);
+}
+.searchBar input:focus {
+  background-color: rgba(0, 0, 0, 0.434);
+  border: 2px solid rgb(186, 186, 186);
+}
+.searchBar input::placeholder{
+  color: white;
+}
+.searchBar .searchIcon{
+  font-size: 20px;
+  background:transparent;
+  color: white;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1100px) and  (min-width:550px){
+  .removeOverflowY{
+    overflow-y: unset !important;
+    max-width: 500px !important;
+    border-radius: 8px !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .removeOverflowY{
+  
+    max-width: 340px !important;
+
+  }
+}

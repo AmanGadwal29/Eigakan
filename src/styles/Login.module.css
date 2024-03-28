@@ -1,0 +1,71 @@
+
+.loginForm {
+    width: 350px;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Noto Sans Display", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+.loginForm h1{
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.emailSection,.passwordSection{
+    padding: 15px 5px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(228, 228, 228);
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+/* .emailSection::placeholder,.passwordSection::placeholder {
+    color: rgb(141, 141, 141);
+
+} */
+
+.checkBox{
+    color: rgb(228, 228, 228);
+}
+
+.signInbtn{
+    padding: 10px 5px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 10px;
+}
+.forSignUp{
+    margin: 20px 0;
+}
+.forSignUp p {
+    color: gray;
+
+}
+.signUpbtn{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border: none;
+    background-color: black;
+}
+.forSignUp .errorMsg{
+    color: rgb(191, 3, 3);
+}
+
+
+
