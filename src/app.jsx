@@ -12,10 +12,10 @@ import Card from "./components/Card";
 import List from "./components/List";
 import { useState } from "react";
 
-// FOR NAVIGATION 
+// FOR NAVIGATION
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// MATERIAL UI 
+// MATERIAL UI
 import Dialog from "@mui/material/Dialog";
 import { useTheme } from "@mui/material/styles";
 
@@ -68,14 +68,11 @@ export function App() {
                 {/*.....................................  */}
 
                 <Dialog
-               
                   open={open}
                   onClose={handleClose}
                   PaperProps={{
                     className: "removeOverflowY",
                   }}
-
-              
                 >
                   <Card
                     setCardData={setCardData}
@@ -97,7 +94,7 @@ export function App() {
                   <List
                     handleClickOpen={handleClickOpen}
                     getDataForCard={getDataForCard}
-                    title="Populer"
+                    title="Popular"
                     param="popular"
                   />
                   <List
