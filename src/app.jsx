@@ -1,31 +1,28 @@
 import "./app.css";
 import "bootstrap/dist/css/bootstrap.css";
+import * as React from "react";
+
+//COMPONENTS
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import HomeBanner from "./components/HomeBanner";
-
 import Container from "./components/Container";
 import Login from "./components/Login";
-import { useState } from "react";
-
-// import List from "./components/List";
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Card from "./components/Card";
 import List from "./components/List";
-// ........................................
-import * as React from "react";
+import { useState } from "react";
 
+// FOR NAVIGATION 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// MATERIAL UI 
 import Dialog from "@mui/material/Dialog";
-
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 
 export function App() {
-  // ............................
+  // FOR POPUP WHEN CLICKED ON ANY MOVIE
   const [open, setOpen] = React.useState(false);
   const theme = useTheme();
-  // const fullScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -34,7 +31,7 @@ export function App() {
   const handleClose = () => {
     setOpen(false);
   };
-  // ....................................
+  // TO GET THE DATA OF MOVIE WHEN CLICKED ON IT
   const [cardData, setCardData] = useState([]);
   const getDataForCard = (movieData) => {
     setCardData(movieData);
@@ -71,14 +68,14 @@ export function App() {
                 {/*.....................................  */}
 
                 <Dialog
-                  // fullScreen={fullScreen}
+               
                   open={open}
                   onClose={handleClose}
                   PaperProps={{
                     className: "removeOverflowY",
                   }}
 
-                  // aria-labelledby="responsive-dialog-title"
+              
                 >
                   <Card
                     setCardData={setCardData}

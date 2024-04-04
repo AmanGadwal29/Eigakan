@@ -30,8 +30,8 @@ const Login = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // User is signed in
-        const user = userCredential.user;
-        console.log("User signed in:", user);
+        // const user = userCredential.user;
+        // console.log("User signed in:", user);
         Navigate("/dashboard");
       })
       .catch((error) => {

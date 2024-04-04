@@ -26,7 +26,9 @@ const Card = ({ data, handleClose }) => {
               </div>
             </div>
             <div className={styles.details}>
-              <h1 className={styles.title}>{data.name}</h1>
+              <h1 className={styles.title}>
+                {data.name ? data.name : data.title}
+              </h1>
               <p className={styles.overview}>{data.overview}</p>
               <p className={styles.rating}>
                 {" "}
